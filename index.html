@@ -6,56 +6,70 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"crossorigin="anonymous"/>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/5daa8eb347.js"crossorigin="anonymous"></script>
+
     <script src="https://kit.fontawesome.com/5aea3a3495.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/nav.css">
+
+        <script>
+$(document).ready(function(){
+    $(".dropdown").hover(function(){
+        var dropdownMenu = $(this).children(".dropdown-menu");
+        if(dropdownMenu.is(":visible")){
+            dropdownMenu.parent().toggleClass("open");
+        }
+    });
+});     
+      </script>  
 </head>
-<nav class="navbar  navbar-expand-sm   justify-space-between">
+<nav class="navbar  navbar-expand-sm   flex d-flex   justify-space-between  my-nav">
     <div class="container-fluid">
         <div class="brand-logo  navbar-brand">
             <h1>Time<span>Zone</span></h1>
         </div>
-    
-      <div >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div  class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="nav-bar  navbar-nav">
-            <li ><a class="active  nav-item" href="index.html">Home</a></li>
-            <li class="shop nav-item"><a href="#">Shop</a></li>
-            <li class="nav-item"><a href="#">about</a></li>
-            <li class="nav-item"><a href=""></a>
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"></a>
+            <li class="nav-item"><a class="active  nav-link nav-item" href="index.html">Home</a></li>
+            <li class=" nav-item"><a class="nav-link" href="#">Shop</a></li>
+            <li class=" nav-item"><a class="nav-link" href="#">about</a></li>
+            <li class="nav-item  dropdown">
+                <a href="#" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">latest</a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">product list</a></li>
                     <li><a class="dropdown-item" href="#">product details</a></li>
                 </ul>
             </li>
-            <li class="nav-item"><a href="#">Blog</a>
-                <div class="dropdown-menu">
-                <ul>
+            <li class="nav-item dropdown">
+                <a href="#"  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Blog</a>
+                <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Blog Details</a></li>
                 </ul>
-               </div> 
             </li>
-            <li class="nav-item"><a href="#">Pages</a>
-                <div class="dropdown-menu">
-                    <ul>
+            <li class="nav-item dropdown"> 
+                <a href="#"  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Pages</a>
+                    <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Register</a></li>
                         <li><a class="dropdown-item" href="#">Log In</a></li>
-                        <li><a class="dropdown-item" href="aromaregister.html">Cart</a></li>
+                        <li><a class="dropdown-item" href="#">Cart</a></li>
                         <li><a class="dropdown-item" href="#">Product CheckOut</a></li>
                     </ul>
-                </div>
             </li>
-            <li class="nav-item"><a href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
            </ul>
       </div>
     
        <div class="nav-end">
         <a href="#"> <i class="fa-solid fa-magnifying-glass" style="font-size: 22px;"></i></a>
         <a href="#"><i class="fa-light fa-user"></i></a>
-        <a href=""> <i class="fa-light fa-cart-shopping"></i></a>
+        <a href=""><i class="fa-regular fa-cart-shopping"></i></a>
        </div>
     </div>
 </nav>
