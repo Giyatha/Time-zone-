@@ -19,7 +19,7 @@
         <script>
 $(document).ready(function(){
     $(".dropdown").hover(function(){
-        var dropdownMenu = $(this).children(".dropdown-menu");
+        var dropdownMenu = $(this).children(".dropdown-item");
         if(dropdownMenu.is(":visible")){
             dropdownMenu.parent().toggleClass("open");
         }
@@ -33,7 +33,7 @@ $(document).ready(function(){
             <h1>Time<span>Zone</span></h1>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"><img src="images/menuicon.png" alt=""></span>
           </button>
       <div  class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="nav-bar  navbar-nav">
@@ -41,25 +41,25 @@ $(document).ready(function(){
             <li class=" nav-item"><a class="nav-link" href="#">Shop</a></li>
             <li class=" nav-item"><a class="nav-link" href="#">about</a></li>
             <li class="nav-item  dropdown">
-                <a href="#" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">latest</a>
+                <a href="#" class="nav-link " href="#" role="button" data-bs-toggle="dropdown">latest <sup>New</sup></a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">product list</a></li>
                     <li><a class="dropdown-item" href="#">product details</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
-                <a href="#"  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Blog</a>
+                <a href="#"  class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Blog</a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                    <li><a class="dropdown-item" href="#">blog details</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown"> 
-                <a href="#"  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Pages</a>
+                <a href="#"  class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Pages</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Register</a></li>
-                        <li><a class="dropdown-item" href="#">Log In</a></li>
-                        <li><a class="dropdown-item" href="#">Cart</a></li>
-                        <li><a class="dropdown-item" href="#">Product CheckOut</a></li>
+                        <li><a class="dropdown-item" href="#">register</a></li>
+                        <li><a class="dropdown-item" href="#">log In</a></li>
+                        <li><a class="dropdown-item" href="#">shop Cart</a></li>
+                        <li><a class="dropdown-item" href="#">product checkOut</a></li>
                     </ul>
             </li>
             <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>

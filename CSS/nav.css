@@ -1,5 +1,13 @@
+nav{
+    box-shadow: 1px 1px 7px black;
+}
 nav ul{
     margin-left: 20%;
+}
+@media (max-width=600) {
+    nav ul{
+        margin-left: none;
+    }
 }
 nav ul li{
     display: inline-block;
@@ -33,4 +41,15 @@ nav ul li a:hover{
 .nav-end a:hover{
    border:1px solid  #384aeb; 
    transition: .5s;
+}
+sup{
+    background-color: orangered;
+    color: white;
+    border-radius: 10px;
+    padding: 3px;
+    font-size: 12px;
+}
+span img{
+   width: 20px;
+   height: 40px;
 }
