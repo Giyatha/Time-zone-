@@ -2,11 +2,14 @@ nav{
     box-shadow: 1px 1px 7px black;
 }
 nav ul{
-    margin-left: 20%;
+    margin-left: 10%;
 }
-@media (max-width=600) {
+@media (max-width:1000px) {
     nav ul{
-        margin-left: none;
+        margin-left: -10px;
+    }
+    nav ul li {
+        width: 70px;
     }
 }
 nav ul li{
@@ -38,9 +41,10 @@ nav ul li a:hover{
     color: black;
     padding-left: 10px; 
 }
-.nav-end a:hover{
-   border:1px solid  #384aeb; 
-   transition: .5s;
+@media (max-width:1000px) {
+    .nav-end{
+        display: none;
+    }
 }
 sup{
     background-color: orangered;
@@ -48,9 +52,15 @@ sup{
     border-radius: 10px;
     padding: 3px;
     font-size: 12px;
-    margin-bottom: 20px;
 }
 span img{
    width: 20px;
    height: 40px;
+}
+.dropdown-menu{
+ width: 50px;
+ color: orangered;
+ background-color: orangered;
+ opacity: 1;
+ font-size: 12px;
 }

@@ -8,14 +8,15 @@
 #homepage{
     position: absolute;
     top: 20%;
+    max-width: 100%;
 }
 .home-container{
-    min-width: 100%;
+    max-width: 100%;
 }
 .home-container-txt{
-    max-width:60%;
+    width:60%;
     margin-top: 100px;
-    margin-left: 20%;
+    margin-left: 10%;
 }
 .home-container-txt h1{
     font-size: 90px;
@@ -33,4 +34,15 @@
 }
 .home-container img{
     height: 70vh;
+    min-width: 100%;
+}
+@media (max-width:750px) {
+    .home-container img{
+        display:none;
+    }
+}
+@media (max-width:850px) {
+    .home-container-txt{
+        width: 100%;
+    }
 }
