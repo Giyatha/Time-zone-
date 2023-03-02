@@ -13,11 +13,12 @@
     min-width: 100%;
 }
 .home-container-txt{
-    max-width:40%;
+    max-width:60%;
     margin-top: 100px;
+    margin-left: 20%;
 }
 .home-container-txt h1{
-    font-size: 60px;
+    font-size: 90px;
     font-weight: bold;
 }
 .home-container a{
