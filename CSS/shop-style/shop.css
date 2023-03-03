@@ -163,8 +163,8 @@ img {
 }
 
 @media screen and (min-width: 60rem) {
-	.watch-display-section {
-	}
+	/* .watch-display-section {
+	} */
 	.watch-card {
 		flex-basis: 25%;
 	}
