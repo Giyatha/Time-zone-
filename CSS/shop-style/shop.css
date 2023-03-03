@@ -30,6 +30,10 @@ img {
 .main {
 	/* min-width: 250px; */
 	margin-top: 70px;
+	/* display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center; */
 }
 .main .filters {
 	display: flex;
@@ -48,6 +52,8 @@ img {
 	background-color: #dfdfdf;
 	border-radius: 20px;
 	padding: 10px 5px;
+	margin: 0 15px;
+	height: 40px;
 	letter-spacing: 0.2rem;
 }
 .watch-display-section {
@@ -65,7 +71,7 @@ img {
 	align-items: center;
 	box-shadow: 1px 3px 5px #444;
 	width: 350px;
-	margin: 5px;
+	margin: 10px;
 	/* border-radius: 10px; */
 }
 
@@ -84,19 +90,60 @@ img {
 	background-color: #c2c2c2;
 	border: none;
 	padding: 1rem;
-	height: 0;
-	/* position: relative;
+	position: relative;
 	left: 0;
-	top: 100%; */
+	bottom: -35px;
+	transition: 0.4s;
+}
+.watch-card:hover button {
+	bottom: 0;
 }
 .text-section {
 	text-transform: capitalize;
+	width: 100%;
 	padding: 20px;
 	text-align: center;
 	color: #212c38;
+	background-color: white;
+	z-index: 1;
 }
 .text-section h3 {
 	padding: 15px 0;
+}
+
+.gist {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.sectionB {
+	background-color: rgb(18, 18, 53);
+	padding: 2rem;
+	margin: auto;
+	margin-top: 3.5rem;
+	color: #c2c2c2;
+	flex-basis: 80%;
+	min-width: 10rem;
+	max-width: 55rem;
+	display: flex;
+}
+.sectionB div {
+	padding: 0.5rem 0;
+	height: 150px;
+}
+/* .sectionB div:nth-child(3) {
+	border-top: 1px solid lightsteelblue;
+	border-bottom: 1px solid lightsteelblue;
+} */
+.sectionB h2 {
+	color: var(--Soft-orange);
+}
+.sectionB h3 {
+	color: var(--Off-white);
+	cursor: pointer;
 }
 
 @media screen and (min-width: 40rem) {
@@ -117,9 +164,8 @@ img {
 
 @media screen and (min-width: 60rem) {
 	.watch-display-section {
-		max-width: 70%;
 	}
 	.watch-card {
-		flex-basis: 30%;
+		flex-basis: 25%;
 	}
 }
