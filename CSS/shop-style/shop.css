@@ -59,13 +59,14 @@ img {
 }
 .watch-card {
 	display: flex;
+	flex-basis: 80%;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	box-shadow: 1px 3px 5px #444;
 	width: 350px;
-	margin: 15px;
-	border-radius: 10px;
+	margin: 5px;
+	/* border-radius: 10px; */
 }
 
 .image-container {
@@ -77,11 +78,48 @@ img {
 	align-items: center;
 	text-align: center; */
 }
+.image-container button {
+	width: 100%;
+	color: #444;
+	background-color: #c2c2c2;
+	border: none;
+	padding: 1rem;
+	height: 0;
+	/* position: relative;
+	left: 0;
+	top: 100%; */
+}
 .text-section {
 	text-transform: capitalize;
-	padding: 30px;
-	text-align: right;
+	padding: 20px;
+	text-align: center;
+	color: #212c38;
+}
+.text-section h3 {
+	padding: 15px 0;
 }
 
-@media screen {
+@media screen and (min-width: 40rem) {
+	.main .filter-menu {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.watch-display-section {
+		flex-direction: row;
+		flex-wrap: wrap;
+		/* max-width: 70%; */
+	}
+	.watch-card {
+		flex-basis: 40%;
+	}
+}
+
+@media screen and (min-width: 60rem) {
+	.watch-display-section {
+		max-width: 70%;
+	}
+	.watch-card {
+		flex-basis: 30%;
+	}
 }
