@@ -17,7 +17,7 @@ img {
 #hero.hero {
 	background-image: linear-gradient(to right, #444, grey);
 	width: 100%;
-	height: 70vh;
+	height: 60vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -33,6 +33,7 @@ img {
 }
 .main .filters {
 	display: flex;
+	margin: 5px 0;
 }
 .main .filter-menu {
 	padding-top: 20px;
@@ -40,5 +41,47 @@ img {
 }
 
 .main .filter-menu .filters p {
-	padding: 10px;
+	padding: 15px;
+}
+#Select {
+	border: none;
+	background-color: #dfdfdf;
+	border-radius: 20px;
+	padding: 10px 5px;
+	letter-spacing: 0.2rem;
+}
+.watch-display-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.watch-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 1px 3px 5px #444;
+	width: 350px;
+	margin: 15px;
+	border-radius: 10px;
+}
+
+.image-container {
+	background-image: linear-gradient(to right, #444, grey);
+	width: 100%;
+	/* height: 60vh; */
+	/* display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center; */
+}
+.text-section {
+	text-transform: capitalize;
+	padding: 30px;
+	text-align: right;
+}
+
+@media screen {
 }
