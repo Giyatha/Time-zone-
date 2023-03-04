@@ -23,15 +23,16 @@
     font-size: 90px;
     font-weight: bold;
 }
-.home-container1 a{
+.home-container-txt a, .button{
     text-decoration: none;
     border: transparent;
-    border-radius: 5px;
-    padding: 9px 30px 9px 30px;
+    border-radius: 2px;
+    padding: 9px 35px 9px 35px;
     color: white;
     background-color: orangered;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
+    margin-top: 90px;
 }
 .home-container1 img{
     width: 100%;
@@ -82,4 +83,23 @@
 }
 .video{
     margin-top: 100px;
+}
+.choices{
+    margin-top: 100px;
+    width: 90%;
+}
+.choices-txt{
+    width: 35%;
+    margin-top: 80px;
+}
+.choices-txt h1{
+    font-size: 4rem;
+    font-weight: bolder;
+}
+.choices-txt p{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.choices-img{
+    background-color: gray;
 }
