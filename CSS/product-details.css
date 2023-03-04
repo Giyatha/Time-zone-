@@ -1,0 +1,106 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Josefin Sans", sans-serif;
+}
+body {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+img {
+	width: 100%;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#hero.hero {
+	background-image: linear-gradient(to right, #e7640c, #f0e218);
+	width: 100%;
+	height: 60vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.hero h1 {
+	text-align: center;
+}
+
+.main {
+	margin-top: 70px;
+}
+
+.watch-display-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.watch-card {
+	display: flex;
+	flex-basis: 80%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 1px 3px 5px #444;
+	width: 350px;
+	margin: 10px;
+	/* border-radius: 10px; */
+}
+
+.image-container {
+	background-image: linear-gradient(to right, #444, grey);
+	width: 100%;
+}
+.image-container button {
+	width: 100%;
+	color: #444;
+	background-color: #c2c2c2;
+	border: none;
+	padding: 1rem;
+	position: relative;
+	left: 0;
+	bottom: -35px;
+	transition: 0.4s;
+}
+.watch-card:hover button {
+	bottom: 0;
+}
+.text-section {
+	text-transform: capitalize;
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+	color: #212c38;
+	background-color: white;
+	z-index: 1;
+}
+.text-section h3 {
+	padding: 10px 0;
+}
+
+.carousel {
+	position: relative;
+	overflow: hidden;
+	width: 90vw;
+	height: 70vh;
+}
+
+.carousel img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: transform 0.5s ease;
+}
+
+.carousel img:not(:first-child) {
+	transform: translateX(100%);
+}
