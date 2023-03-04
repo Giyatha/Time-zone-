@@ -1,12 +1,13 @@
 nav{
     box-shadow: 1px 1px 7px black;
+    z-index: 2;
 }
 nav ul{
     margin-left: 10%;
 }
 @media (max-width:1000px) {
     nav ul{
-        margin-left: -10px;
+        
     }
     nav ul li {
         width: 70px;
@@ -58,9 +59,14 @@ span img{
    height: 40px;
 }
 .dropdown-menu{
- width: 50px;
  color: orangered;
  background-color: orangered;
  opacity: 1;
  font-size: 12px;
+}
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown > .dropdown-toggle:active {
+    pointer-events: none;
 }

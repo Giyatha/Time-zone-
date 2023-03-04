@@ -28,7 +28,7 @@ $(document).ready(function(){
 });     
       </script>  
 </head>
-<nav class="navbar  navbar-expand-sm  navbar-expand-md  fixed  flex  d-flex  justify-space-between  my-nav">
+<nav class="navbar  navbar-expand-sm  navbar-expand-md  fixed-top  flex  d-flex  justify-space-between  my-nav">
     <div class="container-fluid">
         <div class="brand-logo  navbar-brand">
             <h1>Time<span>Zone</span></h1>
@@ -37,9 +37,9 @@ $(document).ready(function(){
             <span class="navbar-toggler-icon">  <i class="fa-solid fa-bars"></i></span>
           </button>
       <div  class="collapse navbar-collapse " id="collapsibleNavbar">
-        <ul class="nav-bar  navbar-nav">
+        <ul class="nav-bar  navbar-nav  mx-auto  justify-content-center ">
             <li class="nav-item"><a class="active  nav-link nav-item" href="index.html">Home</a></li>
-            <li class=" nav-item"><a class="nav-link" href="#">Shop</a></li>
+            <li class=" nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
             <li class=" nav-item"><a class="nav-link" href="#">about</a></li>
             <li class="nav-item  dropdown"><a href="#" class="nav-link " href="#" role="button" data-bs-toggle="dropdown">latest <sup>New</sup></a>
                 <ul class="dropdown-menu">
@@ -77,7 +77,7 @@ $(document).ready(function(){
 
 <body>
     <section id="homepage">
-      <div class="home-container d-flex flex-row   justify-content-between  align-items-center">
+      <div class="home-container1  d-flex  justify-content-around">
             <div class="home-container-txt">
                 <h1>Select your new perfect style</h1>
             <p>A town hall different from bala blu, blue blu bulaba. 
@@ -85,14 +85,58 @@ $(document).ready(function(){
                  the dinner would be cassava, eba, ewa and everything.</p>
             <a href="#">Shop Now</a>
             </div>
-        <div> 
+           
+           <div> 
             <img src="images/versus-versace-mar-vista-leather-strap-watch-34mm-removebg-preview.png" alt="">
-        </div>
+           </div>
       </div>
-    </section>
-    <section id="part2">
-      
+
+        <div class="home-container2  d-flex  flex-wrap   justify-content-center">
+            <div class="home-container-content flex-column align-content-center">
+                <div>
+                    <img src="images/casio.jpg" alt="">
+                </div>
+                <div class="text-section">
+                    <h3>thermo ball etip gloves</h3>
+                    <p>$ 45,743</p>
+                </div>
+            </div>
+            
+            <div class="home-container-content">
+                <div>
+                    <img src="images/casio.jpg" alt="">
+                </div>
+                <div class="text-section">
+                    <h3>thermo ball etip gloves</h3>
+                    <p>$ 45,743</p>
+                </div>
+            </div>
+            
+            <div class="home-container-content">
+                <div>
+                    <img src="images/casio.jpg" alt="">
+                </div>
+                <div class="text-section">
+                    <h3>thermo ball etip gloves</h3>
+                    <p>$ 45,743</p>
+                </div>
+            </div>
+            
+        </div>
         
+        <div class="grid-part  row">
+            <div class="col-sm-9">
+                <img src="images/blackbg.jpeg" alt="">
+            </div>
+            <div class="col-6">
+                <img src="images/casio.jpg" alt="">
+            </div>
+            <div class="col-3">
+                <img src="images/casio.jpg" alt="">
+            </div>
+        </div>
+
     </section>
+    <a href="#hero"><div class="backToTop">&#8593</div></a>
 </body>
 </html>
