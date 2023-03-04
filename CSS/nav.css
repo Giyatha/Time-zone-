@@ -1,6 +1,6 @@
 nav{
     box-shadow: 1px 1px 7px black;
-    z-index: 2;
+    z-index: 1;
 }
 nav ul{
     margin-left: 10%;
