@@ -1,55 +1,22 @@
-const carousel = document.querySelector(".carousel");
-const images = document.querySelectorAll(".carousel img");
-const prevBtn = document.getElementById("prevBtn");
-const nextBtn = document.getElementById("nextBtn");
+const buttons = document.querySelectorAll("[data-carousel-btn]");
+const nextBtn = document.querySelector('[data-carousel-btn="next"]');
 
-let currentIndex = 0;
+buttons.forEach((btn) => {
+	btn.addEventListener("click", () => {
+		const offset = btn.dataset.carouselButton === "next" ? 1 : -1;
+		const slides = btn.closest("[data-carousel]").querySelector("[data-slides");
 
-function showImage(index) {
-	images.forEach((img) => {
-		img.style.transform = `translateX(-${index * 100}%)`;
+		const activeSlide = slides.querySelector("[data-active]");
+		let newIndex = [...slides.children].indexOf(activeSlide) + offset;
+
+		if (newIndex < 0) newIndex = slides.children.length - 1;
+		if (newIndex >= slides.children.length) newIndex = 0;
+
+		slides.children[newIndex].dataset.active = true;
+		delete activeSlide.dataset.active;
 	});
-}
-
-function nextImage() {
-	currentIndex++;
-	if (currentIndex > images.length - 1) {
-		currentIndex = 0;
-	}
-	showImage(currentIndex);
-}
-
-function prevImage() {
-	currentIndex--;
-	if (currentIndex < 0) {
-		currentIndex = images.length - 1;
-	}
-	showImage(currentIndex);
-}
-
-setInterval(nextImage, 3000);
-
-prevBtn.addEventListener("click", prevImage);
-nextBtn.addEventListener("click", nextImage);
-
-let startX;
-let startY;
-let endX;
-let endY;
-
-carousel.addEventListener("touchstart", (e) => {
-	startX = e.touches[0].clientX;
-	startY = e.touches[0].clientY;
 });
 
-carousel.addEventListener("touchend", (e) => {
-	endX = e.changedTouches[0].clientX;
-	endY = e.changedTouches[0].clientY;
-	if (Math.abs(startX - endX) > Math.abs(startY - endY)) {
-		if (startX > endX) {
-			nextImage();
-		} else if (startX < endX) {
-			prevImage();
-		}
-	}
-});
+setInterval(() => {
+	nextBtn.click();
+}, 5000);
