@@ -7,7 +7,7 @@
 		<title>shop</title>
 		<link rel="stylesheet" href="./CSS/product-details.css" />
 		<title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"crossorigin="anonymous"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"crossorigin="anonymous"/>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/5daa8eb347.js"crossorigin="anonymous"></script>
@@ -17,10 +17,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/nav.css">
-	</head>
-	<body>
-		<!-- <nav class="navbar  navbar-expand-sm  navbar-expand-md  fixed  flex  d-flex  justify-space-between  my-nav">
+    <link rel="stylesheet" href="/CSS/shop-style/shop.css">
+    <link rel="stylesheet" href="/CSS/product-details.css">
+    <script src=""></script>
+
+        <script>
+$(document).ready(function(){
+    $(".dropdown").hover(function(){
+        var dropdownMenu = $(this).children(".dropdown-item");
+        if(dropdownMenu.is(":visible")){
+            dropdownMenu.parent().toggleClass("open");
+        }
+    });
+});     
+      </script>  
+</head>
+
+<nav class="navbar  navbar-expand-sm  navbar-expand-md  fixed-top   d-flex  justify-space-between  my-nav">
     <div class="container-fluid">
         <div class="brand-logo  navbar-brand">
             <h1>Time<span>Zone</span></h1>
@@ -29,14 +44,14 @@
             <span class="navbar-toggler-icon">  <i class="fa-solid fa-bars"></i></span>
           </button>
       <div  class="collapse navbar-collapse " id="collapsibleNavbar">
-        <ul class="nav-bar  navbar-nav">
+        <ul class="nav-bar  navbar-nav  mx-auto  justify-content-center ">
             <li class="nav-item"><a class="active  nav-link nav-item" href="index.html">Home</a></li>
-            <li class=" nav-item"><a class="nav-link" href="#">Shop</a></li>
+            <li class=" nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
             <li class=" nav-item"><a class="nav-link" href="#">about</a></li>
             <li class="nav-item  dropdown"><a href="#" class="nav-link " href="#" role="button" data-bs-toggle="dropdown">latest <sup>New</sup></a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">product list</a></li>
-                    <li><a class="dropdown-item" href="#">product details</a></li>
+                    <li><a class="dropdown-item" href="product-details.html">product details</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
@@ -65,7 +80,10 @@
        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
        </div> 
     </div>
-</nav> -->
+</nav>
+
+
+<body>
 		<div id="hero" class="hero">
 			<h1>Watch shop</h1>
 		</div>
