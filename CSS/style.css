@@ -112,7 +112,9 @@ footer{
 footer .ft-container{
     margin-top: 30px;
 }
-footer h1,h3,a,p{
+footer h1,footer h3,footer a, footer p, footer i{
     text-decoration: none;
     color: white;
 }
+
+
