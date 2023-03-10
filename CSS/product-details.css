@@ -31,67 +31,95 @@ img {
 }
 .hero h1 {
 	text-align: center;
+	font-size: 3rem;
+	font-weight: 900;
+	color: #fff;
 }
 
 .main {
 	margin-top: 70px;
 }
 
-.watch-display-section {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-}
-.watch-card {
-	display: flex;
-	flex-basis: 80%;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	box-shadow: 1px 3px 5px #444;
-	width: 350px;
-	margin: 10px;
-	/* border-radius: 10px; */
-}
-
 .image-container {
 	background-image: linear-gradient(to right, #444, grey);
 	width: 100%;
 }
-.image-container button {
-	width: 100%;
-	color: #444;
-	background-color: #c2c2c2;
-	border: none;
-	padding: 1rem;
-	position: relative;
-	left: 0;
-	bottom: -35px;
-	transition: 0.4s;
-}
-.watch-card:hover button {
-	bottom: 0;
-}
+
 .text-section {
-	text-transform: capitalize;
-	width: 100%;
-	padding: 20px;
+	max-width: 700px;
+	padding: 1.5rem;
 	text-align: center;
-	color: #212c38;
 	background-color: white;
 	z-index: 1;
 }
-.text-section h3 {
-	padding: 10px 0;
+.text-section h2,
+.text-section p,
+.quantity p {
+	color: #000;
 }
 
+.text-section h2 {
+	padding: 1.5rem 0;
+	text-transform: capitalize;
+}
+
+.quantity {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.functionality {
+	border: 1px solid #444;
+	width: 150px;
+	height: 70px;
+	margin: 0 1rem;
+	display: flex;
+	justify-content: space-around;
+	font-size: 3rem;
+}
+
+.quantity p {
+	font-weight: 900;
+}
+
+.functionality span {
+	padding: 2px 10px;
+	color: #000;
+}
+.functionality span:nth-child(2) {
+	background-color: #444;
+	color: #fff;
+}
+
+.btn {
+	border-radius: 5px;
+	border: 1px solid #2577fd;
+	color: #2577fd;
+	padding: 1.5rem;
+	margin-top: 5rem;
+	background-color: white;
+	transition: 0.3s;
+}
+.btn:hover {
+	background-color: #2577fd;
+	color: white;
+}
+
+.carousel-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: -12rem;
+	text-align: center;
+}
 .carousel {
 	position: relative;
 	overflow: hidden;
-	width: 100vw;
-	height: 80vh;
+	width: 90vw;
+	height: 55vh;
 }
 .slide {
 	position: absolute;
@@ -127,6 +155,7 @@ img {
 	border-radius: 0.25rem;
 	padding: 0.5rem;
 	background-color: rgba(0, 0, 0, 0.1);
+	display: none;
 }
 .carousel-btn:hover,
 .carousel-btn:focus {
@@ -143,4 +172,30 @@ img {
 }
 .next {
 	right: 1rem;
+}
+
+@media screen and (min-width: 40rem) {
+	#hero.hero {
+		height: 88vh;
+	}
+
+	.bottom-section {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		align-items: start;
+	}
+
+	.bottom-section .bottom-item {
+		flex-basis: 40%;
+		margin: 10px;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 60rem) {
+	.carousel-btn {
+		display: block;
+	}
 }
