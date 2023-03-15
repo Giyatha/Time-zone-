@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* .section{
+
+} */
+
+.blog-card {
+  width: 100%;
+  position: relative;
+  box-shadow: 1px 1px 1px 3px #eee;
+}
+.blog-card > img {
+  height: 5%;
+}
+.date {
+  color: white;
+  background-color: red;
+  position: absolute;
+  padding: 15px;
+  border-radius: 5px;
+  left: 30px;
+  transform: translateY(-60px);
+}
+.blog-text {
+  margin-top: 20px;
+  padding: 10px;
+}
+.blog-card:hover .blog-text h3 {
+  color: red;
+}

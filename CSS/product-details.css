@@ -174,6 +174,51 @@ img {
 	right: 1rem;
 }
 
+.subscribe {
+	background-color: #191d34;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 3rem;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+.subscribe h2,
+.subscribe p,
+input.email {
+	color: white;
+	max-width: 550px;
+}
+.subscribe h2 {
+	margin: 20px 0;
+}
+.subscribe p {
+	line-height: 1.8rem;
+}
+.subscribe input {
+	background-color: transparent;
+	border: 1px solid white;
+	border-radius: 50px;
+}
+.subscribe input.email {
+	padding: 20px 50px 20px 20px;
+	width: 100%;
+	margin-top: 50px;
+}
+.subscribe input.submit {
+	padding: 16px;
+	width: 50%;
+	max-width: 250px;
+	border: 1px solid transparent;
+	color: white;
+	margin-top: 20px;
+	background-color: #2577fd;
+}
+.subscribe input.submit:hover {
+	border: 1px solid white;
+	background-color: transparent;
+}
 @media screen and (min-width: 40rem) {
 	#hero.hero {
 		height: 88vh;
