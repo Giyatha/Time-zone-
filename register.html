@@ -37,10 +37,10 @@
             <li class="nav-item"><a class="active  nav-link nav-item" href="index.html">Home</a></li>
             <li class=" nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
             <li class=" nav-item"><a class="nav-link" href="about.html">about</a></li>
-            <li class="nav-item  dropdown"><a href="#" class="nav-link " href="latest.html" role="button" data-bs-toggle="dropdown">latest <sup>New</sup></a>
+            <li class="nav-item  dropdown"><a class="nav-link " href="latest.html" role="button" data-bs-toggle="dropdown">latest <sup>New</sup></a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">product list</a></li>
                     <li><a class="dropdown-item" href="product-details.html">product details</a></li>
+                    <li><a class="dropdown-item" href="productcheckout.html">product details</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
@@ -52,7 +52,7 @@
             <li class="nav-item dropdown"> 
                 <a href="#"  class="nav-link" href="pages.html" role="button" data-bs-toggle="dropdown">Pages</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">register</a></li>
+                        <li><a class="dropdown-item" href="register.html">register</a></li>
                         <li><a class="dropdown-item" href="login.html">log In</a></li>
                         <li><a class="dropdown-item" href="#">shop Cart</a></li>
                         <li><a class="dropdown-item" href="product-details.html">product checkOut</a></li>
@@ -72,8 +72,38 @@
 </nav>
 
 <body>
-    <div id="hero" class="hero">
-        <h1>Watch shop</h1>
+        <div id="hero" class="hero">
+            <h1>Register Now</h1>
+        </div>
+    
+        <section class="login-form d-flex row justify-content-center flex-wrap">
+            <div class="registeration-form1">
+                <h2 style="font-size: 30px;">Already have an account?</h2>
+            <p >Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Labore, voluptate veritatis id facilis saepe culpa esse! 
+                Modi maiores quas numquam.</p>
+    
+                <a href="login.html">Login Now</a>
+            </div>
+    
+    
+            <div class="login-form2 d-flex row justify-content-center" >
+               
+                <form action="">
+                    <h2>CREATE AN ACCOUNT</h2>
+                    <input type="text" placeholder="Username" ><br>
+                    <input type="text" placeholder="E-mail Address" ><br>
+                    <input type="text" placeholder="Password" ><br>
+                    <input type="text" placeholder="Confirm Password"><br>
+                    <label for="check"><input type="checkbox" name="check" id="check">Keep me logged in</label>
+                    <button type="submit">REGISTER</button>
+                    <a class="none" href="" style="text-align: center;text-decoration: none;margin-top: 20px;
+                color:rgb(105, 103, 103);">Forgot Password</a>
+           
+                </form>
+                
+                 </div>
+    </section>
     </div>
 </body>
 </html>

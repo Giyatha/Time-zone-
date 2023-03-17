@@ -74,6 +74,11 @@
     height: 35vh;
     width: 90%;
 }
+.gallery-content img:hover{
+    transform: scale(1,2);
+    opacity: 0.1;
+    cursor: pointer;
+} 
 .gallery-content{
    width: 30%;
 }

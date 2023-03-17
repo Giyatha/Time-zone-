@@ -1,0 +1,122 @@
+
+.register h2{
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 150px;
+    text-align: center;
+}
+.sub-register{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.sub-register a , p{
+    color:rgb(70, 65, 65) ;
+    text-decoration: none;
+}
+.registeration-form, .login-form{
+    background-color:#fff;
+    width: 100%;
+    padding:10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top:60% ;
+}
+.registeration-form1, .login-form1{
+    background-color: #384aeb;
+    color: #fff;
+    width: 45%;
+    text-align: center;
+    height: 600px;
+    padding: 19% 5% 7% 5%;
+}
+.registeration-form1 h2, .login-form h2{
+    font-size: 18px;
+}
+.registeration-form1 p, .login-form1 p{
+    
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.registeration-form1 a ,.login-form1 a{
+    border:1px solid white ;
+    padding: 9px 30px 9px 30px;
+    background-color: #384aeb;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 30px;
+    margin-top: 80px;
+}
+.registeration-form1 a:hover,.login-form1 a:hover
+{
+    background-color: red;
+    border: none;
+}
+.registeration-form2{
+    height: 600px;
+    background-color: white;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 5% 5% 7% 5%;
+    box-shadow: 0px 0px 10px rgb(90, 87, 87);
+}
+.registeration-form2 h2,.login-form2 h2{
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 18px;
+}
+.registeration-form2 form input
+ {
+    margin-top: 30px;
+    width: 350px;
+    border: none;
+    border-bottom: 1px solid black;
+
+}
+.registeration-form2 form input:nth-last-child(2){
+    margin: 0%;
+}
+.registeration-form2 button{
+    padding: 10px 40px 10px 40px;
+    width: 350px;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    border: transparent;   
+}
+.login-form2{
+    height: 600px;
+    background-color: white;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 5% 0% 10% 5%;
+    box-shadow: 0px 0px 10px rgb(90, 87, 87);
+}
+.login-form2 form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+}
+.login-form2 form input, .login-form1 form input::after{
+    border: none;
+    border-bottom: 1px solid orangered;
+}
+.login-form2 button{
+    color: #fff;
+    background-color: orangered;
+    text-decoration: none;
+    border: none;
+    padding: 11px 50px;
+}
