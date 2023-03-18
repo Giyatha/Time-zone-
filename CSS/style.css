@@ -113,6 +113,7 @@ footer{
     height: 40vh;
     background-color: orangered;
     color: white;
+    flex-wrap: wrap;
 }
 footer .ft-container{
     margin-top: 30px;
@@ -121,5 +122,9 @@ footer h1,footer h3,footer a, footer p, footer i{
     text-decoration: none;
     color: white;
 }
-
-
+.ft-columns{
+     width: 20%;
+}
+.copywrite{
+    margin-top: 40px;
+}
