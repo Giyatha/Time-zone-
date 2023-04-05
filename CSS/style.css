@@ -68,7 +68,7 @@
     width: 100%;
 }
 .gallery-content img{
-    height: 70vh;
+    height: 100vh;
     width: 100%;
     background-color: orangered;
     transform: scale(-0.3);
@@ -76,8 +76,6 @@
      
 }
 .sub-gallery img{
-    height: 35vh;
-    width: 90%;
     transform: scale(-0.3);
     transition: 7s;
      

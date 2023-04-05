@@ -1,0 +1,25 @@
+.contact-page{
+position: absolute;
+top: 25%;
+}
+.contact-pg{
+    color: white;
+    
+    padding: 15px;
+    
+    margin: 0 auto;
+    display: flex;
+    
+}
+.containerc{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: space-between;
+}
+.part2{
+    background-color: orange;
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+}
